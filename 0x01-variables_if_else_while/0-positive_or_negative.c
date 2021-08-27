@@ -1,7 +1,11 @@
 #include <stdio.h>
 #include <time.h>
-#include<stdlib.h>
-/* betty style doc for function main goes there */
+#include<stdlib.>
+/**
+*main - entry point of programs
+*
+*Return: return 0
+*/
 int main(void)
 {
 	int n;
