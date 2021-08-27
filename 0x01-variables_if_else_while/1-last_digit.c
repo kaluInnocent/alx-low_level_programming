@@ -2,9 +2,10 @@
 #include<stdlib.h>
 #include<time.h>
 /**
-*main: Prints the last digit of a random number
-*
-*Return: Return 0
+* main - Prints the last digit of a random number
+* @last_digit: The remainder when n is divided by 10
+* 
+* Return: Return 0
 */
 int main(void)
 {
