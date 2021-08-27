@@ -1,6 +1,5 @@
-#include<ctype.h>
-#include<stdlib.h>
 #include<stdio.h>
+#include<ctype.h>
 /**
 * main - Program prints digits 0-9
 *
