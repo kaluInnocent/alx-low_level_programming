@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<ctype.h>
 /**
-* main - Program prints all possible combinations 
+* main - Program prints all possible combinations
 * of three digits with commas and spaces
 *
 * Return: return 0
