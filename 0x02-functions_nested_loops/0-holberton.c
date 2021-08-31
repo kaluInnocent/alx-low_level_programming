@@ -6,7 +6,7 @@
 */
 int main(void)
 {
-	char alx* = "Holberton";
+	char alx[10] = "Holberton";
 	int ch;
 
 	for (ch = 0; ch < 10; ch++)
