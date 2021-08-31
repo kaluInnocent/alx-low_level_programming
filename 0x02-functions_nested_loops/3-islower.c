@@ -1,6 +1,7 @@
 #include "main.h"
 /**
 * _islower - function checks for lowercase alphabets
+* @letter: parameter to be tested
 *
 * Return: return1 if lowercase, 0 otherwise
 */
