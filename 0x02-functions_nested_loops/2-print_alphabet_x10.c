@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-* void print_alphabet_x10 - function prints the alphabets
+* print_alphabet_x10 - function prints the alphabets
 * prints the alphabets in lower case in 10 lines
 *
 * Return: return 0
