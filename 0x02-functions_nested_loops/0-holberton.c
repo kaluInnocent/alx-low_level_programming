@@ -4,12 +4,12 @@
 *
 * Return: return 0
 */
-int main (void)
+int main(void)
 {
-	char alx[9] = {'H', 'o', 'l', 'b', 'e', 'r', 't', 'o', 'n'};
-	unsigned int ch ;
+	char alx* = "Holberton";
+	int ch;
 
-	for (ch = 0; ch < sizeof(alx); ch++)
+	for (ch = 0; ch < 10; ch++)
 	{
 		_putchar(alx[ch]);
 	}
