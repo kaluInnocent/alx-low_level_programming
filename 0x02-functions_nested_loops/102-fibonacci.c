@@ -8,22 +8,20 @@
 */
 int main(void)
 {
-	int previous = 1;
-	int current = 2;
+	unsigned long previous = 1, current = 2, new;
 	int i = 3;
-	int new;
 	
-	printf("%d, %d, ", previous, current);
+	printf("%lu, %lu, ", previous, current);
 	while (i <= 50)
 	{
 		new = previous + current;
-		if (new != 50)
+		if (i != 50)
 		{
-			printf("%d, ", new);
+			printf("%lu, ", new);
 		}
 		else
 		{
-			printf("%d", new);
+			printf("%lu", new);
 		}
 		previous = current;
 		current = new;
