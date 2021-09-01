@@ -10,6 +10,7 @@ int main(void)
 {
 	unsigned long previous = 1, current = 2, new;
 	int i = 3;
+
 	printf("%lu, %lu, ", previous, current);
 	while (i <= 50)
 	{
