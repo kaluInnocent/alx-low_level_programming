@@ -8,7 +8,7 @@
 */
 int main(void)
 {
-	unsigned long previous = 1, current = 2, new;
+	unsigned long long int previous = 1, current = 2, new;
 	int i = 3;
 
 	printf("%lu, %lu, ", previous, current);
