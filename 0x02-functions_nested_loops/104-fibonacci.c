@@ -8,20 +8,20 @@
 */
 int main(void)
 {
-	unsigned long long int previous = 1, current = 2, new;
+	unsigned long previous = 1, current = 2, new;
 	int i = 3;
 
-	printf("%llu, %llu, ", previous, current);
+	printf("%lu, %lu, ", previous, current);
 	while (i <= 98)
 	{
 		new = previous + current;
 		if (i != 98)
 		{
-			printf("%llu, ", new);
+			printf("%lu, ", new);
 		}
 		else
 		{
-			printf("%llu", new);
+			printf("%lu", new);
 		}
 		previous = current;
 		current = new;
