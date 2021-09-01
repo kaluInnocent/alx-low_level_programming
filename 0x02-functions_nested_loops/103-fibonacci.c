@@ -9,6 +9,7 @@
 int main(void)
 {
 	unsigned long previous = 0, current = 1, new = 0, sum = 0;
+
 	while (new <= 4000000)
 	{
 		new = previous + current;
@@ -18,7 +19,6 @@ int main(void)
 		{
 			sum += previous;
 		}
-	
 	}
 	printf("%ld\n", sum);
 	return (0);
