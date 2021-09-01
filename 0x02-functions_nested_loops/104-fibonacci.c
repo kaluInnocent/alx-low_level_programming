@@ -11,17 +11,17 @@ int main(void)
 	unsigned long long int previous = 1, current = 2, new;
 	int i = 3;
 
-	printf("%lu, %lu, ", previous, current);
+	printf("%llu, %llu, ", previous, current);
 	while (i <= 98)
 	{
 		new = previous + current;
 		if (i != 98)
 		{
-			printf("%lu, ", new);
+			printf("%llu, ", new);
 		}
 		else
 		{
-			printf("%lu", new);
+			printf("%llu", new);
 		}
 		previous = current;
 		current = new;
