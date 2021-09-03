@@ -7,25 +7,16 @@
 */
 int main(void)
 {
-	long int i, number = 612852475143;
-	int max;
+	long i, num = 612852475143;
 
-	while (number % 2 == 0)
+	for (i = 2; i <= num; i++)
 	{
-		max = 2;
-		number = number / 2;
-	}
-	for (i = 3; i <= sqrt(number); i += 2)
-	{
-		while (number % i == 0)
+		if (num % i == 0)
 		{
-			max = i;
-			number = number / i;
+			num = num / i;
+			i--;
 		}
 	}
-	if (number > 2)
-	{
-		max = number;
-	}
-	printf("%d", max);
+	printf("%lu\n", i);
+	return (0);
 }
