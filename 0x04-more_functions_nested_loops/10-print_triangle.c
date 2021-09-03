@@ -6,22 +6,16 @@
 */
 void print_triangle(int size)
 {
-	int row, column, i;
+	int row, column, j;
 
 	if (size <= 0)
-	{
 		_putchar('\n');
-	}
 	for (row = 0; row < size; row++)
 	{
 		for (column = size - row; column > 1; column--)
-		{
 			_putchar(' ');
-		}
-		for (i = row + column; i >= 1; i--)
-		{
+		for (j = row + column; j >= 1; j--)
 			_putchar('#');
-		}
 		_putchar('\n');
 	}
 }
