@@ -1,9 +1,9 @@
 #ifndef MAIN_H
 #define MAIN_H
 /**
-* File: main.h
-* Author: K!O
-* Description: header file containing function prototypes
+* main - maifunctions and header file for prototypes
+* void prototypes (void)
+* int prototypes (int)
 */
 
 int _putchar(char c);
