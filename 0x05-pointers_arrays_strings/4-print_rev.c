@@ -7,15 +7,13 @@
 void print_rev(char *s)
 {
 	int max;
-	while(*s != '\0')
+
+	for (max = 0; s[max] != '\0'; max++)
 	{
-		max++;
-		s++;
-		while (max-1)
-		{
-			putchar(s[max]);
-			max--;
-		}
 	}
-		_putchar('\n');
+	for (max = max - 1; max >= 0; max--)
+	{
+		_putchar(s[max]);
+	}
+	_putchar('\n');
 }
