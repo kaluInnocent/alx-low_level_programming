@@ -10,16 +10,7 @@ int _atoi(char *s)
 
 	for (i = 0; s[i] >= '0' && s[i] <= '9'; ++i)
 	{
-		if (*s == '-')
-		{
-			i *= -1;
-		}
-		else if (*s >= '0' && *s <= '9')
-		{
-			n = 10 * n + (s[i] - '0');
-		}
-		else if (n > 0)
-			break;
+		n = 10 * n + (s[i] - '0');
 	}
 	return (n);
 }
