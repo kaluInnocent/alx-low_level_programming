@@ -1,3 +1,4 @@
+#include "main.h"
 /**
 * reverse_array - function reverses the content of an array
 * @a: pointer to array
@@ -11,6 +12,7 @@ void reverse_array(int *a, int n)
 	while (start < end)
 	{
 		int temp = a[start];
+
 		a[start] = a[end];
 		a[end] = temp;
 		start++;
