@@ -1,35 +1,33 @@
-#0x03. C - Debugging
+# 0x03. C - Debugging
 
-##Resources
+## Resources
 
-###Read or watch:
+### Read or watch:
 
-*Debugging
-*Rubber Duck Debugging
-*Debugging is the process of finding and fixing errors in software that prevents it from running correctly. As you become a more advanced programmer and an industry engineer, you will learn how to use debugging tools such as gdb or built-in tools that IDEs have. However, it’s important to understand the concepts and processes of debugging manually.
-Learning Objectives
+- Debugging
+- Rubber Duck Debugging
+
+Debugging is the process of finding and fixing errors in software that prevents it from running correctly. As you become a more advanced programmer and an industry engineer, you will learn how to use debugging tools such as gdb or built-in tools that IDEs have. However, it’s important to understand the concepts and processes of debugging manually.
+### Learning Objectives
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
 
-##General
-What is debugging
-What are some methods of debugging manually
-How to read the error messages
-##Requirements
-###General
-Allowed editors: vi, vim, emacs
-All your files will be compiled on Ubuntu 20.04 LTS using gcc, using the options -Wall -Werror -Wextra -pedantic -std=gnu89
-All your files should end with a new line
-Your code should use the Betty style. It will be checked using betty-style.pl and betty-doc.pl
-A README.md file at the root of the repo, containing a description of the repository
-A README.md file, at the root of the folder of this project (i.e. 0x03-debugging), describing what this project is about
-Quiz questions
-Show
+## General
+- What is debugging
+- What are some methods of debugging manually
+- How to read the error messages
+## Requirements
+### General
+- Allowed editors: `vi`, `vim`, `emacs`
+- All your files will be compiled on `Ubuntu 20.04 LTS` using `gcc`, using the options `-Wall -Werror -Wextra -pedantic -std=gnu89`
+- All your files should end with a new line
+- Your code should use the Betty style. It will be checked using `betty-style.pl` and `betty-doc.pl`
+- A `README.md` file at the root of the repo, containing a description of the repository
+- A `README.md` file, at the root of the folder of this project (i.e. `0x03-debugging`), describing what this project is about
 
 ##Tasks
-0. Multiple mains
-mandatory
-In most projects, we often give you only one main file to test with. For example, this main file is a test for a postitive_or_negative() function similar to the one you worked with in an earlier C project:
-
+### 0. Multiple mains
+In most projects, we often give you only one main file to test with. For example, this main file is a test for a `postitive_or_negative()` function similar to the one you worked with in an earlier C project:
+```
 carrie@ubuntu:/debugging$ cat main.c
 #include "main.h"
 
@@ -62,30 +60,33 @@ carrie@ubuntu:/debugging$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 positiv
 carrie@ubuntu:/debugging$ ./a.out
 98 is positive
 carrie@ubuntu:/debugging$
-Based on the main.c file above, create a file named 0-main.c. This file must test that the function positive_or_negative() gives the correct output when given a case of 0.
+```
+Based on the `main.c` file above, create a file named `0-main.c`. This file must test that the function `positive_or_negative()` gives the correct output when given a case of `0`.
 
 You are not coding the solution / function, you’re just testing it! However, you can adapt your function from 0x01. C - Variables, if, else, while - Task #0 to compile with this main file to test locally.
 
-You only need to upload 0-main.c and main.h for this task. We will provide our own positive_or_negative() function.
+You only need to upload `0-main.c` and `main.h` for this task. We will provide our own `positive_or_negative()` function.
 You are not allowed to add or remove lines of code, you may change only one line in this task.
-carrie@ubuntu:/debugging$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 positive_or_negative.c 0-main.c -o 0-main
+```
+carrie@ubuntu:/debugging$ `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 positive_or_negative.c 0-main.c -o 0-main`
 carrie@ubuntu:/debugging$ ./0-main
 0 is zero
 carrie@ubuntu:/debugging$ wc -l 0-main.c
 16 1-main.c
 carrie@ubuntu:/debugging$
-Repo:
+```
+#### Repo:
 
-GitHub repository: alx-low_level_programming
-Directory: 0x03-debugging
-File: 0-main.c, main.h
+- GitHub repository: alx-low_level_programming
+- Directory: 0x03-debugging
+- File: 0-main.c, main.h
 
-1. Like, comment, subscribe
-mandatory
+### 1. Like, comment, subscribe
 Copy this main file. Comment out (don’t delete it!) the part of the code that is causing the output to go into an infinite loop.
 
-Don’t add or remove any lines of code, as we will be checking your line count. You are only allowed to comment out existing code.
-You do not have to compile with -Wall -Werror -Wextra -pedantic for this task.
+- Don’t add or remove any lines of code, as we will be checking your line count. You are only allowed to comment out existing code.
+- You do not have to compile with `-Wall -Werror -Wextra -pedantic` for this task.
+```
 carrie@ubuntu:/debugging$ cat 1-main.c
 #include <stdio.h>
 
@@ -121,16 +122,16 @@ Infinite loop avoided! \o/
 carrie@ubuntu:/debugging$ wc -l 1-main.c
 24 1-main.c
 carrie@ubuntu:/debugging$
-Repo:
+```
+#### Repo:
 
-GitHub repository: alx-low_level_programming
-Directory: 0x03-debugging
-File: 1-main.c
+- GitHub repository: alx-low_level_programming
+- Directory: 0x03-debugging
+- File: 1-main.c
 
-2. 0 > 972?
-mandatory
+### 2. 0 > 972?
 This program prints the largest of three integers.
-
+```
 carrie@ubuntu:/debugging$ cat 2-main.c
 #include <stdio.h>
 #include "main.h"
@@ -192,21 +193,22 @@ carrie@ubuntu:/debugging$ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 2-large
 carrie@ubuntu:/debugging$ ./2-main
 0 is the largest number
 carrie@ubuntu:/debugging$
+```
 ? That’s definitely not right.
 
-Fix the code in 2-largest_number.c so that it correctly prints out the largest of three numbers, no matter the case.
+Fix the code in `2-largest_number.c` so that it correctly prints out the largest of three numbers, no matter the case.
 
 Line count will not be checked for this task.
-Repo:
+#### Repo:
 
-GitHub repository: alx-low_level_programming
-Directory: 0x03-debugging
-File: 2-largest_number.c, main.h
+- GitHub repository: alx-low_level_programming
+- Directory: 0x03-debugging
+- File: 2-largest_number.c, main.h
 
-3. Leap year
+### 3. Leap year
 mandatory
 This program converts a date to the day of year and determines how many days are left in the year, taking leap year into consideration.
-
+```
 carrie@ubuntu:/debugging$ cat 3-main_a.c
 #include <stdio.h>
 #include "main.h"
@@ -346,14 +348,14 @@ Date: 02/29/2000
 Invalid date: 02/29/2000
 carrie@ubuntu:/debugging$
 ? That doesn’t seem right.
-
-Fix the print_remaining_days() function so that the output works correctly for all dates and all leap years.
+```
+Fix the `print_remaining_days()` function so that the output works correctly for all dates and all leap years.
 
 Line count will not be checked for this task.
 You can assume that all test cases have valid months (i.e. the value of month will never be less than 1 or greater than 12) and valid days (i.e. the value of day will never be less than 1 or greater than 31).
 You can assume that all test cases have valid month/day combinations (i.e. there will never be a June 31st or November 31st, etc.), but not all month/day/year combinations are valid (i.e. February 29, 1991 or February 29, 2427).
-Repo:
+#### Repo:
 
-GitHub repository: alx-low_level_programming
-Directory: 0x03-debugging
-File: 3-print_remaining_days.c, main.h
+- GitHub repository: `alx-low_level_programming`
+- Directory: `0x03-debugging`
+- File: `3-print_remaining_days.c`, `main.h`
