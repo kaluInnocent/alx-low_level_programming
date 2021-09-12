@@ -29,7 +29,7 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 - You are not allowed to use the standard library. Any use of functions like `printf`, `puts`, etc… is forbidden
 - You are allowed to use `_putchar`
 - You don’t have to push `_putchar.c`, we will use our file. If you do it won’t be taken into account
-- In the following examples, the `main.c` files are shown as examples. You can use them to test your functions, but you don’t have to push them to your repo (if you do we won’t take them into account). We will use our own main.c files at compilation. Our `main.c` files might be different from the one shown in the examples
+- In the following examples, the `main.c` files are shown as examples. You can use them to test your functions, but you don’t have to push them to your repo (if you do we won’t take them into account). We will use our own `main.c` files at compilation. Our `main.c` files might be different from the one shown in the examples
 - The prototypes of all your functions and the prototype of the function `_putchar` should be included in your header file called `main.h`
 - Don’t forget to push your header file
 ## More Info
@@ -487,7 +487,7 @@ julien@ubuntu:~/0x07$
 - File: `100-set_string.c`
 
 ### 9. My primary goal of hacking was the intellectual curiosity, the seduction of adventure
-Create a file that contains the password for the crackme2 executable.
+Create a file that contains the password for the [crackme2 executable.](https://github.com/holbertonschool/0x06.c)
 
 - Your file should contain the exact password, no new line, no extra space
 - `ltrace`, `ldd`, `gdb` and `objdump` can help
