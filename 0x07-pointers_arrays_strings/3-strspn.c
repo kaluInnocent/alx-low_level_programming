@@ -10,6 +10,7 @@ unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int byte = 0;
 	int index;
+
 	while (*s)
 	{
 		for (index = 0; accept[index]; index++)
