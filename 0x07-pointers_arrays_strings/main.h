@@ -15,4 +15,5 @@ char *_strchr(char *s, char c);
 char *_strstr(char *haystack, char *needle);
 char *_strpbrk(char *s, char *accept);
 unsigned int _strspn(char *s, char *accept);
+void set_string(char **s, char *to);
 #endif
