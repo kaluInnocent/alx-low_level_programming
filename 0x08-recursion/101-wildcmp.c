@@ -1,8 +1,7 @@
 #include "main.h"
 /**
-* wild_strlen - Returns the length of a string,
-* ignoring wildcard characters.
-* @str: The string to be measured.
+* wild_strlen - Returns the length of a string,ignoring wildcard characters.
+* @s: The string to be measured.
 * Return: The length.
 */
 int wild_strlen(char *s)
@@ -22,6 +21,7 @@ int wild_strlen(char *s)
 * loop_wild - Iterates through a string located at a wildcard
 * until it points to a non-wildcard character.
 * @str: The string to be iterated through.
+* Return: returns nothing
 */
 void loop_wild(char **str)
 {
@@ -37,7 +37,7 @@ void loop_wild(char **str)
 * @str: String to be matched.
 * @post: The postfix.
 * Return: Returns a pointer to the null byte located at the end of postfix
-* If str and postfix are a match
+* if str and postfix are a match
 * otherwise returns a pointer to the first unmatched character in postfix.
 */
 char *post_match(char *str, char *post)
@@ -58,7 +58,6 @@ char *post_match(char *str, char *post)
 * wildcmp - function compares two strings, for wildcard characters.
 * @s1: The first string to be compared.
 * @s2: The second string to be compared - may contain wildcards.
-*
 * Return: Returns -1 if the strings can be considered identical and 0 otherwise
 */
 int wildcmp(char *s1, char *s2)
