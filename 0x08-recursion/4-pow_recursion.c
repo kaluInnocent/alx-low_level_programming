@@ -3,7 +3,7 @@
 * x raised to the power of y
 * @x: is the radix or base
 * @y: is the index
-* Return; function returns the value of x to power y
+* Return: function returns the value of x to power y
 */
 int _pow_recursion(int x, int y)
 {
