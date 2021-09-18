@@ -44,8 +44,7 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 - A `README.md` file, at the root of the folder of the project, describing what each script is doing
 - All your files must be executable
 ## Task
-#### Tasks
-0. A library is not a luxury but one of the necessities of life
+#### 0. A library is not a luxury but one of the necessities of life
 mandatory
 - Create the static library `libmy.a` containing all the functions listed below:
 ```
