@@ -8,13 +8,9 @@
 */
 int slen(char *s)
 {
-	int len = 0;
-
-	while (*s)
-	{
+	int len = 0, i;
+	for (i = 0; s[i] != '\0'; i++)
 		len++;
-		s++;
-	}
 	return (len);
 }
 /**
@@ -26,7 +22,7 @@ int slen(char *s)
 */
 char *argstostr(int ac, char **av)
 {
-	int i, j, len = 0, index = 0;
+	int i = 0, j = 0, len = 0, index = 0;
 	char *str;
 
 	if (ac == 0 || av == NULL)
@@ -44,9 +40,10 @@ char *argstostr(int ac, char **av)
 
 	for (i = 0; i < ac; i++)
 	{
-		for (j = 0; av[i][j]; j++)
+		for (j = 0; av[i][j] != '\0'; j++)
 			str[index++] = av[i][j];
 		str[index++] = '\n';
 	}
+	str[index] = '\0';
 	return (str);
 }
