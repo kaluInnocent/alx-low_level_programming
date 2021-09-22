@@ -39,16 +39,17 @@ char *argstostr(int ac, char **av)
 
 	if (str == NULL)
 	{
-		free(str);
 		return (NULL);
 	}
 
 	for (i = 0; i < ac; i++)
 	{
-		for (j = 0; j < slen(av[i]); j++)
-			str[index++] = av[i][j];
-		str[index++] = '\n';
+		for (j = 0; av[i][j]; j++, index++)
+			str[index] = av[i][j];
+		str[index] = '\n';
+		index++;
 	}
+	str[index] = '\0';
 	return (str);
 	return (str);
 }
