@@ -49,14 +49,15 @@ dog_t *new_dog(char *name, float age, char *owner)
 	if (doggy == NULL)
 		return (NULL);
 
-	doggy->name = malloc(sizeof(char) * (slen(name) + 1));
+	doggy->name = malloc(sizeof(char) * slen(name) + 1);
 	if (doggy->name == NULL)
 	{
 		free(doggy);
 		return (NULL);
 	}
+	doggy->name = scopy(doggy->name, name);
 
-	doggy->owner = malloc(sizeof(char) * (slen(owner) + 1));
+	doggy->owner = malloc(sizeof(char) * slen(owner) + 1);
 	if (doggy->owner == NULL)
 	{
 		free(doggy->name);
@@ -64,7 +65,6 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	}
 
-	doggy->name = scopy(doggy->name, name);
 	doggy->owner = scopy(doggy->owner, owner);
 	doggy->age = age;
 
