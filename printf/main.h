@@ -7,7 +7,7 @@
 
 /**
 * struct formater - a structure definition for type specifiers and functions
-* @type: The operator
+* @typ: The operator
 * @func: The accompanying function
 */
 struct formater
