@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
-* free_list -function frees a list_t list
+* free_list - function frees a list_t list
 * @head: head of the node to be freed
 * Return: Nothing
 */
