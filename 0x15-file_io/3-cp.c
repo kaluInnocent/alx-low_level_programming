@@ -22,7 +22,7 @@ char *alloc(char *filename)
 	return (mem);
 }
 
-/** 
+/**
 * _close - function closes a file
 * @d: The file descriptor
 * Return: Nothing
@@ -40,7 +40,7 @@ void _close(int d)
 }
 
 /**
-* main: function copies the contents of a file to another
+* main - function copies the contents of a file to another
 * @argc: Number of arguments passed to the program
 * @argv: Array of pointers to the arguments
 * Return: 0 on success
@@ -52,10 +52,7 @@ void _close(int d)
 
 int main(int argc, char *argv[])
 {
-	int open_from;
-	int open_to;
-	int rd;
-	int wr;
+	int open_from, open_to, rd, wr;
 	char *mem;
 
 	if (argc != 3)
@@ -63,7 +60,6 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
-
 	mem = alloc(argv[2]);
 	open_from = open(argv[1], O_RDONLY);
 	rd = read(open_from, mem, 1024);
@@ -77,7 +73,6 @@ int main(int argc, char *argv[])
 			free(mem);
 			exit(98);
 		}
-
 		wr = write(open_to, mem, rd);
 		if (open_to == -1 || wr == -1)
 		{
@@ -86,14 +81,11 @@ int main(int argc, char *argv[])
 			free(mem);
 			exit(99);
 		}
-
 		rd = read(open_from, mem, 1024);
 		open_to = open(argv[2], O_WRONLY | O_APPEND);
 	} while (rd > 0);
-
 	free(mem);
 	_close(open_from);
 	_close(open_to);
-
 	return (0);
 }
