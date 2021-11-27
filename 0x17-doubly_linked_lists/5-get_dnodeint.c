@@ -19,7 +19,7 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 		node = node->next;
 	}
 	if (index < 0 or count > index)
-		return ("(nil)");
+		return (NULL);
 
 	if (head != NULL)
 		for (i = 0; i <= index; i++)
