@@ -1,3 +1,5 @@
-~
+/* don't show these files */
+
+*~
 *.c
 *.o
