@@ -7,9 +7,9 @@
 #include <math.h>
 
 /**
+* Description: header files containing function prototypes
 * File: search_algos.h
 * Author: K!O™
-* Description: header file containing function prototypes
 */
 
 /**
@@ -18,15 +18,16 @@
 * @n: Integer
 * @index: Index of the node in the list
 * @next: Pointer to the next node
-* 
+*
 * Description: singly linked list node structure
-*/
+ */
 typedef struct listint_s
 {
-    int n;
-    size_t index;
-    struct listint_s *next;
+	int n;
+	size_t index;
+	struct listint_s *next;
 } listint_t;
+
 
 /**
 * struct skiplist_s - Singly linked list with an express lane
@@ -40,10 +41,10 @@ typedef struct listint_s
 */
 typedef struct skiplist_s
 {
-    int n;
-    size_t index;
-    struct skiplist_s *next;
-    struct skiplist_s *express;
+	int n;
+	size_t index;
+	struct skiplist_s *next;
+	struct skiplist_s *express;
 } skiplist_t;
 
 /* Function prototypes*/
