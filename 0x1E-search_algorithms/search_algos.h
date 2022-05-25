@@ -7,6 +7,12 @@
 #include <math.h>
 
 /**
+* File: search_algos.h
+* Author: K!O™
+* Description: header file containing function prototypes
+*/
+
+/**
  * struct listint_s - singly linked list
  *
  * @n: Integer
@@ -39,13 +45,6 @@ typedef struct skiplist_s
     struct skiplist_s *next;
     struct skiplist_s *express;
 } skiplist_t;
-
-
-/**
-* main functions prototypes for all functions
-* void prototypes (void)
-* int prototypes (int)
-*/
 
 int linear_search(int *array, size_t size, int value);
 int binary_search(int *array, size_t size, int value);
