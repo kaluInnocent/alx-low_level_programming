@@ -7,12 +7,6 @@
 #include <math.h>
 
 /**
-* Description: header files containing function prototypes
-* File: search_algos.h
-* Author: K!O™
-*/
-
-/**
 * struct listint_s - singly linked list
 *
 * @n: Integer
