@@ -1,5 +1,7 @@
 #ifndef SEARCH_ALGOS.H
 #define SEARCH_ALGOS.H
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
 * main functions prototypes for all functions
